@@ -1,5 +1,12 @@
-import { getArray, findThreeMultiples, findFiveMultiples, arrSum } from "./../src/euler.js";
+import getSumOfMultiples from "./../src/euler.js";
 
+describe('getSumOfMultiples', () => {
+  test ('should return the sum of all multiples of three and five from an array ranging from 1 to max number of parameter value', ()=> {
+    const number = 10;
+    expect(getSumOfMultiples(number)).toEqual(33);
+  });   
+});
+/*
 describe('getArray', () => {
     test('should return an array of all natural numbers ranging from 1 to the number in parameter', () => {
         const number = 5;
@@ -27,7 +34,7 @@ describe("arrSum", ()=> {
     expect(arrSum(number)).toEqual(33);
   })
 })
-
+*/
 
 /*
 import formatName from '../src/name.js';
