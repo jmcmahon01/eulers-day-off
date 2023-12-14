@@ -3,7 +3,6 @@
 export default function getSumOfMultiples(num) {
     // we need 2 arrays: 1) all nums 2) for three and five 
     // use .reduce() to get all the sums
-    /*
     let array = [];
     let sum = 0;
     for (let i = 1; i <= num; i++) {
@@ -16,7 +15,6 @@ export default function getSumOfMultiples(num) {
         }
     }
     return sum;
-    */
 };
 
 // function getArray(num) {
