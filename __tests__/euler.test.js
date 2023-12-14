@@ -1,4 +1,4 @@
-import { getArray, findThreeMultiples, findFiveMultiples } from "./../src/euler.js";
+import { getArray, findThreeMultiples, findFiveMultiples, arrSum } from "./../src/euler.js";
 
 describe('getArray', () => {
     test('should return an array of all natural numbers ranging from 1 to the number in parameter', () => {
@@ -21,6 +21,12 @@ describe("findFiveMultiples", ()=> {
   });
 })
 
+describe("arrSum", ()=> {
+  test('should take the two arrays and combine all of the values within it to create one mass number', ()=> {
+    const number = 10;
+    expect(arrSum(number)).toEqual(33);
+  })
+})
 
 
 /*
