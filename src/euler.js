@@ -32,7 +32,24 @@ function findFiveMultiples(num) {
 }
 
 function arrSum(num) {
-    
+  let arrOfThree = findThreeMultiples(num);
+  let arrOfFive = findFiveMultiples(num);
+  return arrOfThree.concat(arrOfFive).reduce((accumulator, currentValue) => accumulator + currentValue, 0);
 }
+//function calculateTotalSum(arr1, arr2) {
+// Combine the two arrays into one array of pairs
+//const combinedArray = arr1.map((value, index) => value + arr2[index]);
 
+// Use reduce to calculate the total sum
+//const totalSum = combinedArray.reduce((sum, currentValue) => sum + currentValue, 0);
 
+//return result;
+//}
+
+/*
+const numbers = [1, 2, 3, 4, 5];
+
+const sum = numbers.reduce((acc, val) => acc + val, 0);""
+
+console.log(sum); // Output: 15
+*/
