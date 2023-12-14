@@ -1,4 +1,4 @@
-export { getArray, findThreeMultiples };
+export { getArray, findThreeMultiples, findFiveMultiples };
 
 function getArray(num) {
     let array=[];
@@ -19,7 +19,9 @@ function findThreeMultiples(num) {
     }
     return threeArr;
 }
-
+function findFiveMultiples() {
+    
+}
 // var % 3 = 0
 // if more than 0 = not divisible by 3.
 

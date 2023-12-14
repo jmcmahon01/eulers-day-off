@@ -1,4 +1,4 @@
-import { getArray, findThreeMultiples } from "./../src/euler.js";
+import { getArray, findThreeMultiples, findFiveMultiples } from "./../src/euler.js";
 
 describe('getArray', () => {
     test('should return an array of all natural numbers ranging from 1 to the number in parameter', () => {
@@ -13,6 +13,13 @@ describe("findThreeMultiples", ()=> {
       expect(findThreeMultiples(number)).toEqual([3, 6, 9]);
     });
 });
+
+describe("findFiveMultiples", ()=> {
+  test('should return an array of every multiple of 5 in the number', ()=> {
+    const number = 10;
+    expect(findFiveMultiples(number)).toEqual([5, 10]);
+  });
+})
 
 
 
